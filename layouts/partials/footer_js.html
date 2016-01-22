@@ -13,3 +13,28 @@ MathJax.Hub.Config({
   });
 </script>
 <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+<!-- Carousel -->
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="{{.Site.BaseURL}}js/unslider-min.js"></script> <!-- but with the right path! -->
+<!-- Swipping -->
+<script src="http://stephband.info/jquery.event.move/js/jquery.event.move.js"></script>
+<script src="http://stephband.info/jquery.event.swipe/js/jquery.event.swipe.js"></script>
+<script>
+jQuery(document).ready(function($){
+  $('.carousel').unslider(
+    {
+      autoplay: true,
+      infinite: true,
+      arrows: {
+        next: '<a class="mdl-button mdl-js-button mdl-js-ripple-effect carousel-button next"><i class="fa fa-arrow-right"></i></a>',
+        prev: '<a class="mdl-button mdl-js-button mdl-js-ripple-effect carousel-button prev"><i class="fa fa-arrow-left"></i></a>'
+      }
+    }
+  );
+  $('.carousel').unslider('initSwipe');
+});
+</script>
+
+<!-- Material Design -->
+<script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>

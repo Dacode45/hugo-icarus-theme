@@ -1,0 +1,32 @@
+<div class="carousel">
+  <style>
+  .carousel-card-wide.mdl-card{
+    width:100%;
+  }
+  .carousel-card-wide>.mdl-card__title{
+    color: #38b7ea;
+    height: 176px;
+  }
+  .carousle-card-wide>.mdl-card__title{
+    color: #38b7ea;
+  }
+  </style>
+  <ul>
+    {{range .Site.Params.sections}}
+    <li>
+      <div class="carousel-card-wide mdl-card mdl-shadow--2dp">
+        <div class="mdl-card__title" style="background: url('{{.background | absURL}}');">
+          <h2 class="mdl-card__title-text">{{.label}}</h2>
+        </div>
+        <div class="mdl-card__supporting-text">
+          {{.lead}}
+        </div>
+        <div class="mdl-card__actions mdl-card--border">
+          <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="{{ .link | absURL }}">
+            Read
+          </a>
+        </div>
+      </div>
+    </li>
+    {{end}}
+</div><!-- /carousel -->

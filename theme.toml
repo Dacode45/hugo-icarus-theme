@@ -13,6 +13,6 @@ min_version = 0.15
 
 # If porting an existing theme
 [original]
-  name = "Ruipeng Zhang"
-  homepage = "//blog.zhangruipeng.me"
-  repo = "//github.com/ppoffice/hexo-theme-icarus"
+  name = "David Ayeke"
+  homepage = "//animooreviews.com"
+  repo = "//github.com/Dacode45/hexo-theme-icarus"

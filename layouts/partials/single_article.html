@@ -4,7 +4,6 @@
             {{ if and (isset .Params "banner") (not (eq .Params.banner "")) }}
             <img src="{{ .Site.BaseURL }}{{ .Params.banner }}" class="article-banner">
             {{ end }}
-
             {{ partial "article_header" . }}
             <div class="article-entry" itemprop="articleBody">
                 {{ .Content }}
